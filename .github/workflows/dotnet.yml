@@ -29,3 +29,10 @@ jobs:
       
     - name: Publish
       run: dotnet publish
+      
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ItunesApi
+        path: D:\a\WPF-ItunesApi\WPF-ItunesApi\bin\Debug\net5.0-windows\publish\
+    
