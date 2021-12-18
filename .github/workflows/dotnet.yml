@@ -23,7 +23,7 @@ jobs:
       
     - name: Build
       run: dotnet build --no-restore
-      # lol
+      
     - name: Test
       run: dotnet test --no-build --verbosity normal
       
@@ -34,5 +34,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: ItunesApi
-        path: D:\a\WPF-ItunesApi\WPF-ItunesApi\bin\Release\net5.0-windows\win-x64\publish\
+        path: D:\a\WPF-ItunesApi\WPF-ItunesApi\bin\Release\net5.0-windows\win-x64\publish\**.exe
     
